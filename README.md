@@ -1,11 +1,10 @@
 # 🛒 Previsão de Recompra de Clientes 
 
 ## 📘 Descrição do Projeto
-Este projeto tem como objetivo prever **a probabilidade de um cliente voltar a comprar** em uma loja online, utilizando técnicas de **aprendizado de máquina supervisionado (Machine Learning)** usando o modelo Radom Forest.  
+Este projeto tem como objetivo prever **se um cliente voltará a comprar** em uma loja online, utilizando técnicas de **aprendizado de máquina supervisionado (Machine Learning)** com o modelo **Random Forest**.  
 
-A análise é baseada em dados transacionais de vendas das lojas do Reino Unido (*clique neste link*) , e busca responder à seguinte pergunta:
-“Com base no comportamento passado, quais clientes têm maior chance de realizar novas compras?”
-
+A análise é baseada em dados transacionais de vendas de uma loja online do Reino Unido, disponíveis [neste link](https://archive.ics.uci.edu/dataset/352/online+retail), e busca responder à seguinte pergunta:  
+> “Com base no comportamento passado, quais clientes voltarão a realizar novas compras?”
 ---
 
 ## 🎯 Objetivos do Projeto
@@ -26,6 +25,15 @@ A análise é baseada em dados transacionais de vendas das lojas do Reino Unido 
   - `scikit-learn` para Modelagem e métricas de ML  
 
 ---
+
+## ⚙️ Instalação
+
+Antes de executar o projeto, certifique-se de que o **Python** está instalado na sua máquina.  
+Você pode verificar isso executando o comando abaixo no terminal:
+
+```bash
+python --version
+
 
 ## ⚙️ Etapas do Projeto
 
@@ -67,13 +75,3 @@ A matriz de confusão e o relatório de classificação foram utilizados para av
 
 ---
 
-## 🔮 Predição de Novos Clientes
-Para demonstrar o uso prático, foi criada uma **linha de teste** simulando um cliente fictício:
-
-```python
-novo_cliente = pd.DataFrame({
-    'Recencia': [30],
-    'Frequencia': [5],
-    'Monetario': [500],
-    'QuantidadeTotal': [20]
-})
